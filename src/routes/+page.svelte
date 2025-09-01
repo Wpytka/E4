@@ -10,6 +10,7 @@
   import BulletGroup from "$lib/components/BulletGroup.svelte";
 
    import { base } from "$app/paths";
+  import TableWithNote from "$lib/components/TableWithNote.svelte";
 </script>
 
 <Header />
@@ -49,7 +50,7 @@
     <BackedContent><h2 class="values-container">Experiences</h2></BackedContent>
   </div>
   <div id="technologies" class="tech-container">
-    <TableContent
+    <TableWithNote
       title={"We are professionals at:"}
       headers={[
         "Platforms & Cloude",
@@ -59,21 +60,20 @@
         "Frontend Frameworks",
       ]}
       values={[
-        ["Azure", "Power Platform", "Shopify", "Umbraco Cloud", "AWS"],
-        [
-          "MSSQL",
-          "PowerBi",
-          "CosmosDB",
-          "Azure Synapse",
-          "ADF",
-          "SQLite",
-          "MongoDB",
-        ],
-        ["C#", "Python", "TypeScript", "JavaScript"],
-        [".NET", "Umbraco", "Django", "FastApi"],
-        ["Blazor", "MAUI", "Angular", "React", "Remix", "Svelte"],
+        ["Azure", "Power Platform", "Shopify", "Umbraco Cloud", "AWS", "Sentry", "DataDog"],
+        ["MSSQL", "PowerBi", "CosmosDB", "Azure Synapse", "ADF", "SQLite", "MongoDB"],
+        ["C#", "Python", "TS/JS", "HTML/CSS", "SQL", "Powershell", "Bash"],
+        [".NET", "Django", "FastApi", "Express.js", "Umbraco"],
+        ["Blazor", "MAUI", "Svelte", "Angular", "React", "Remix", "htmx"],
       ]}
-    ></TableContent>
+    >
+      <h2 class="list-title">We are:</h2>
+      <ol class="bullet-title">
+        <li>Cloud-Native</li>
+        <li>Data-Driven</li>
+        <li>Security-Oriented</li>
+      </ol>
+    </TableWithNote>
   </div>
   <div id="us">
     {#snippet simplicityContent()}
@@ -293,6 +293,19 @@
     padding: 1rem;
     align-items: stretch;
     margin-bottom: 40px;
+  }
+
+  .bullet-title {
+    font-weight: 900;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 79%; 
+  }
+
+  .list-title {
+    margin-bottom: 30px;
   }
 
   .bio-container {

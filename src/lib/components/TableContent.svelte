@@ -52,7 +52,7 @@
     background-color: white;
     position: relative;
     white-space: nowrap; 
-    min-width: 200px;
+    min-width: 150px;
     color:black;
 }
 

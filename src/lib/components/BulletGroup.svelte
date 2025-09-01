@@ -1,5 +1,4 @@
 <script lang="ts">
-  import BackedContent from "./BackedContent.svelte";
   import Devider from "./Devider.svelte";
 
   interface AccordionItem {
