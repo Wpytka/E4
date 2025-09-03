@@ -72,7 +72,8 @@
       <ol class="bullet-title">
         <li>Cloud-Native</li>
         <li>Data-Driven</li>
-        <li>Security-Oriented</li>
+        <li>Security-Minded</li>
+        <li>Goal-Oriented</li>
       </ol>
     </TableWithNote>
   </div>
