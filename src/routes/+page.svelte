@@ -11,6 +11,7 @@
 
    import { base } from "$app/paths";
   import TableWithNote from "$lib/components/TableWithNote.svelte";
+    import AnimatedBackedContent from "$lib/components/AnimatedBackedContent.svelte";
 </script>
 
 <Header />
@@ -32,11 +33,11 @@
     </div>
 
     <div class="component">
-      <BackedContent>
+      <AnimatedBackedContent>
         <div class="image-container">
-          <img src={`${base}/Arrow2.png`} alt="Logo" class="responsive-image" />
+          <img src={`${base}/Arrow2-NoBack.png`} alt="Logo" class="responsive-image" />
         </div>
-      </BackedContent>
+      </AnimatedBackedContent>
     </div>
     <div class="component">
       <EngineeredSolution />
