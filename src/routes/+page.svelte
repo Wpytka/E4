@@ -34,7 +34,7 @@
     <div class="component">
       <BackedContent>
         <div class="image-container">
-          <img src={`${base}/Arrow.png`} alt="Logo" class="responsive-image" />
+          <img src={`${base}/Arrow2.png`} alt="Logo" class="responsive-image" />
         </div>
       </BackedContent>
     </div>
@@ -282,6 +282,7 @@
     display: flex;
     height: 500px; /* Full viewport height */
     justify-content: center;
+    align-items: center;
     gap: 1rem; /* Add space between components */
     padding: 1rem; /* Add some padding around the container */
   }
@@ -314,6 +315,10 @@
     gap: 1rem;
     padding: 1rem;
     align-items: stretch;
+  }
+
+  .image-container{
+    align-items: center;
   }
 
   .component {
