@@ -4,7 +4,7 @@
 
 <div class="animated-dots-container">
     <div class="content">
-        {@render children()}
+        {@render children?.()}
     </div>
 </div>
 

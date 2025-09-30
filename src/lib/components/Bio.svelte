@@ -10,7 +10,7 @@
       <h2 class="right-title">{title}</h2>
       <div class="bio">
         <div class="">
-          {@render children()}
+          {@render children?.()}
         </div>
         <img src={imgSrc} alt="Logo" class="right-image" />
       </div>
@@ -20,7 +20,7 @@
       <h2>{title}</h2>
       <div class="bio">
         <img src={imgSrc} alt="Logo" class="image" />
-        {@render children()}
+        {@render children?.()}
       </div>
     </BackedContent>
   {/if}
@@ -29,7 +29,7 @@
     <h2 class="center">{title}</h2>
     <div class="bio">
       <div class="">
-        {@render children()}
+        {@render children?.()}
       </div>
     </div>
   </BackedContent>

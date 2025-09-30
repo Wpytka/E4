@@ -4,7 +4,7 @@
 
 <div class="dots-container">
     <div class="content">
-        {@render children()}
+        {@render children?.()}
     </div>
 </div>
 

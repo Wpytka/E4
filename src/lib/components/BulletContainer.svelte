@@ -25,7 +25,7 @@
 >
   <Devider></Devider>
   <div class="titled-container-text">
-    {@render children()}
+    {@render children?.()}
   </div>
 </div>
 

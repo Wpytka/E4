@@ -11,7 +11,7 @@
     <Devider></Devider>
 </div>
 <div class="note-content">
-    {@render children()}
+    {@render children?.()}
 </div>
 </div>
 

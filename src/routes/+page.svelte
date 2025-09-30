@@ -3,7 +3,6 @@
   import EngineeredSolution from "$lib/components/EngineeredSolution.svelte";
   import BackedContent from "$lib/components/BackedContent.svelte";
   import Bio from "$lib/components/Bio.svelte";
-  import TableContent from "$lib/components/TableContent.svelte";
   import Devider from "$lib/components/Devider.svelte";
   import Footer from "$lib/components/Footer.svelte";
   import Header from "$lib/components/Header.svelte";
@@ -12,6 +11,8 @@
    import { base } from "$app/paths";
   import TableWithNote from "$lib/components/TableWithNote.svelte";
     import AnimatedBackedContent from "$lib/components/AnimatedBackedContent.svelte";
+  import ExperienceHackathon from "$lib/parts/Experience-InnovationHackathon.svelte";
+  import ExperienceHhtRescue from "$lib/parts/Experience-HHTRescue.svelte";
 </script>
 
 <Header />
@@ -49,12 +50,14 @@
   </div>
   <div id="experiences">
     <BackedContent><h2 class="values-container">Experiences</h2></BackedContent>
+    <ExperienceHackathon/>
+    <ExperienceHhtRescue/>
   </div>
   <div id="technologies" class="tech-container">
     <TableWithNote
       title={"We are professionals at:"}
       headers={[
-        "Platforms & Cloude",
+        "Platforms & Cloud",
         "Data",
         "Languages",
         "Backend Frameworks",
@@ -277,7 +280,7 @@
   .page-wrapper {
     max-width: 1248px;
     margin: 0 auto;
-    padding: 0 1rem;
+
   }
 
   .scene-container {
@@ -293,8 +296,8 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    padding: 1rem;
     align-items: stretch;
+    margin-top: 40px;
     margin-bottom: 40px;
   }
 
