@@ -5,11 +5,11 @@
 
 <div class="header">
   <div class="image-container">
-    <img src={`${base}/Logo.png`} alt="Logo" class="static-image" />
+    <a href="/"><img src={`${base}/Logo.png`} alt="Logo" class="static-image" /></a>
   </div>
   <div class="nav">
-    <a href="#services" class="gradient-text">Services</a>
-    <a href="#experiences" class="gradient-text">Experiences</a>
+    <a href="/services" class="gradient-text">Services</a>
+    <a href="/experiences" class="gradient-text">Experiences</a>
     <a href="#technologies" class="gradient-text">Technologies</a>
     <a href="#us" class="gradient-text">Us</a>
     <a href="#contact" class="gradient-text">Contact</a>

@@ -13,6 +13,8 @@
     import AnimatedBackedContent from "$lib/components/AnimatedBackedContent.svelte";
   import ExperienceHackathon from "$lib/parts/Experience-InnovationHackathon.svelte";
   import ExperienceHhtRescue from "$lib/parts/Experience-HHTRescue.svelte";
+
+  import NodeDiagram from "$lib/components/Diagramming/ServicesDiagram.svelte";
 </script>
 
 <Header />
@@ -45,41 +47,7 @@
     </div>
   </div>
 
-  <div id="services">
-    <BackedContent><h2 class="values-container">Services</h2></BackedContent>
-  </div>
-  <div id="experiences">
-    <BackedContent><h2 class="values-container">Experiences</h2></BackedContent>
-    <ExperienceHackathon/>
-    <ExperienceHhtRescue/>
-  </div>
-  <div id="technologies" class="tech-container">
-    <TableWithNote
-      title={"We are professionals at:"}
-      headers={[
-        "Platforms & Cloud",
-        "Data",
-        "Languages",
-        "Backend Frameworks",
-        "Frontend Frameworks",
-      ]}
-      values={[
-        ["Azure", "Power Platform", "Shopify", "Umbraco Cloud", "AWS", "Sentry", "DataDog"],
-        ["MSSQL", "PowerBi", "CosmosDB", "Azure Synapse", "ADF", "SQLite", "MongoDB"],
-        ["C#", "Python", "TS/JS", "HTML/CSS", "SQL", "Powershell", "Bash"],
-        [".NET", "Django", "FastApi", "Express.js", "Umbraco"],
-        ["Blazor", "MAUI", "Svelte", "Angular", "React", "Remix", "htmx"],
-      ]}
-    >
-      <h2 class="list-title">We are:</h2>
-      <ol class="bullet-title">
-        <li>Cloud-Native</li>
-        <li>Data-Driven</li>
-        <li>Security-Minded</li>
-        <li>Goal-Oriented</li>
-      </ol>
-    </TableWithNote>
-  </div>
+  <BackedContent><h2 class="values-container">Core Values</h2></BackedContent>
   <div id="us">
     {#snippet simplicityContent()}
       <div>
@@ -152,9 +120,6 @@
         <p>We remain accountable to Ourselves and to our Clients.</p>
       </div>
     {/snippet}
-
-    <BackedContent><h2 class="values-container">Core Values</h2></BackedContent>
-
     <BulletGroup
       items={[
         {
@@ -187,6 +152,39 @@
         },
       ]}
     />
+
+    <div id="technologies" class="tech-container">
+    <TableWithNote
+      title={"We are professionals at:"}
+      headers={[
+        "Platforms & Cloud",
+        "Data",
+        "Languages",
+        "Backend Frameworks",
+        "Frontend Frameworks",
+      ]}
+      values={[
+        ["Azure", "Power Platform", "Shopify", "Umbraco Cloud", "AWS", "Sentry", "DataDog"],
+        ["MSSQL", "PowerBi", "CosmosDB", "Azure Synapse", "ADF", "SQLite", "MongoDB"],
+        ["C#", "Python", "TS/JS", "HTML/CSS", "SQL", "Powershell", "Bash"],
+        [".NET", "Django", "FastApi", "Express.js", "Umbraco"],
+        ["Blazor", "MAUI", "Svelte", "Angular", "React", "Remix", "htmx"],
+      ]}
+    >
+      <h2 class="list-title">We are:</h2>
+      <ol class="bullet-title">
+        <li>Cloud-Native</li>
+        <li>Data-Driven</li>
+        <li>Security-Minded</li>
+        <li>Goal-Oriented</li>
+      </ol>
+    </TableWithNote>
+  </div>
+
+  <div id="services">
+    <BackedContent><h2 class="values-container">Services</h2></BackedContent>
+    <NodeDiagram></NodeDiagram>
+  </div>
 
     <Bio title="The Team" reversed={false} imgSrc={null}>
       <div class="content text-block">
@@ -384,7 +382,7 @@
   }
 
   .gradient-text {
-    background: linear-gradient(to right, rgb(20, 110, 220), pink, springgreen);
+    background: linear-gradient(to right, #146edc, pink, springgreen);
     background-size: 200% 200%;
     animation: rainbow 2s ease-in-out infinite;
     background-clip: text;

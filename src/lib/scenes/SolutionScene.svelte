@@ -60,10 +60,10 @@
     {#await env then e}
         <MeshRefractionMaterial
         envMap={e}
-        fresnel={0.1}
+        fresnel={2}
         ior={3.0}
-        aberrationStrength={0.104}
-        bounces={2}
+        aberrationStrength={0.2}
+        bounces={1}
         color={'#e3abff'}
       />
     {/await}
@@ -84,10 +84,10 @@
     {#await env then e}
         <MeshRefractionMaterial
         envMap={e}
-        fresnel={0.1}
+        fresnel={2}
         ior={2.75}
-        aberrationStrength={0.04}
-        bounces={3}
+        aberrationStrength={0.2}
+        bounces={1}
         color={'#ffc800'}
       />
     {/await}
