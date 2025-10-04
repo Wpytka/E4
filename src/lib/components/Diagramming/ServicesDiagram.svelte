@@ -42,7 +42,7 @@
 </script>
 
 <div class="diagram-wrapper">
-    <SvelteFlow bind:nodes {nodeTypes} bind:edges width={1248} height={600}>
+    <SvelteFlow bind:nodes {nodeTypes} bind:edges width={1248} height={600} minZoom={1} maxZoom={1} translateExtent={[[0,0],[1248,600]]}>
         <Background bgColor="#fff" variant={BackgroundVariant.Dots} patternColor="#146edc"/>
     </SvelteFlow>
 </div>
