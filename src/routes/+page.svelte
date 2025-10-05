@@ -14,9 +14,10 @@
   import ExperienceHackathon from "$lib/parts/Experience-InnovationHackathon.svelte";
   import ExperienceHhtRescue from "$lib/parts/Experience-HHTRescue.svelte";
 
-  import NodeDiagram from "$lib/components/Diagramming/ServicesDiagram.svelte";
+  import ServicesDiagram from "$lib/components/Diagramming/ServicesDiagram.svelte";
   import Hero from "$lib/components/Hero.svelte";
   import SubdivigingTitle from "$lib/components/SubdivigingTitle.svelte";
+  import ExperiencesDiagram from "$lib/components/Diagramming/ExperiencesDiagram.svelte";
 </script>
 
 <Header />
@@ -198,9 +199,9 @@
       </TableWithNote>
     </div>
 
-    <div id="services">
+    <div>
       <SubdivigingTitle title="Services" />
-      <NodeDiagram></NodeDiagram>
+      <ServicesDiagram></ServicesDiagram>
     </div>
 
     <Bio title="The Team" reversed={false} imgSrc={null}>
@@ -285,6 +286,12 @@
       </Bio>
     </div>
   </div>
+
+    <div>
+      <SubdivigingTitle title="Experiences" />
+      <ExperiencesDiagram></ExperiencesDiagram>
+    </div>
+
   <div id="contact">
     <SubdivigingTitle title="Contact" />
   </div>
