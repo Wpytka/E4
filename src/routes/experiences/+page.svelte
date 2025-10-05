@@ -21,8 +21,4 @@
 <Footer />
 
 <style>
-  .page-wrapper {
-    max-width: 1248px;
-    margin: 0 auto;
-  }
 </style>

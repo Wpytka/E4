@@ -4,7 +4,7 @@
     let { data }: NodeProps = $props();
 </script>
 
-<a href="{data.nav as string}" class="link">
+<a href="{data.nav as string}" class="no-color-link">
     <div class="node-gradient-1">
         <div class="node-text">{data.service}</div>
     </div>
@@ -29,12 +29,5 @@
         padding-right: 20px;
         font-weight:500;
     }
-    .handle {
-        color: linear-gradient(to right, #146edc, pink, springgreen) 1;
-    }
-    .link {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-  }
+
 </style>

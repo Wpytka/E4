@@ -123,27 +123,4 @@
     text-align: justify;
     align-items: center;
   }
-  .gradient-text {
-    background: linear-gradient(to right, rgb(20, 110, 220), pink, springgreen);
-    background-size: 200% 200%;
-    animation: rainbow 2s ease-in-out infinite;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: rgba(0, 0, 0, 1);
-    transition: color 0.2s ease-in-out;
-  }
-  .gradient-text:hover {
-    color: rgba(0, 0, 0, 0);
-  }
-  @keyframes rainbow {
-    0% {
-      background-position: left;
-    }
-    50% {
-      background-position: right;
-    }
-    100% {
-      background-position: left;
-    }
-  }
 </style>

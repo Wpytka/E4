@@ -5,7 +5,7 @@
     import CustomNodeType from "./CustomNodeType.svelte";
 
     let nodes = $state.raw([
-        { id: "1", type: 'custom', position: { x: 470, y: 20 }, data: { service: "Delivery Managment", nav:"/services" }, connectable:false, deletable:false},
+        { id: "1", type: 'custom', position: { x: 470, y: 20 }, data: { service: "Delivery Managment", nav:"/services#delivery-management" }, connectable:false, deletable:false},
         { id: "2", type: 'custom', position: { x: 200, y: 150 }, data: { service: "Support", nav:"/services" },connectable:false, deletable:false },
         { id: "3", type: 'custom', position: { x: 750, y: 150 }, data: { service: "Software Delivery", nav:"/services" },connectable:false, deletable:false },
 
@@ -48,15 +48,5 @@
 </div>
 
 <style>
-    .diagram-wrapper {
-        width: 1248px;
-        height: 600px;
-        margin: 0 auto;
-    }
 
-    .node {
-		background-color: #19d1ff;
-		color: #2076ff;
-		font-family: 'DM Mono', monospace;
-	}
 </style>

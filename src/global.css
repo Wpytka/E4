@@ -1,0 +1,49 @@
+  .page-wrapper {
+      max-width: 1248px;
+      margin: 0 auto;
+  }
+
+  .link {
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+  .no-color-link {
+      text-decoration: none;
+      cursor: pointer;
+      color: inherit;
+  }
+
+  .diagram-wrapper {
+      width: 1248px;
+      height: 600px;
+      margin: 0 auto;
+  }
+
+  .gradient-text {
+      background: linear-gradient(to right, #146edc, pink, springgreen);
+      background-size: 200% 200%;
+      animation: rainbow 2s ease-in-out infinite;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: rgba(0, 0, 0, 1);
+      transition: color 0.2s ease-in-out;
+  }
+
+  .gradient-text:hover {
+      color: rgba(0, 0, 0, 0);
+  }
+
+  @keyframes rainbow {
+      0% {
+          background-position: left;
+      }
+
+      50% {
+          background-position: right;
+      }
+
+      100% {
+          background-position: left;
+      }
+  }

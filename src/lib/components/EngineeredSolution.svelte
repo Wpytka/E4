@@ -39,12 +39,6 @@
         background: transparent;
     }
 
-    .frame {
-        border: 1px solid #ddd;
-        padding: 1.5rem;
-        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-        border-radius: 8px; /* Optional: rounded corners */
-    }
     .background-content {
         position: absolute;
         z-index: 2;

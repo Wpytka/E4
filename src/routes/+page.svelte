@@ -8,46 +8,45 @@
   import Header from "$lib/components/Header.svelte";
   import BulletGroup from "$lib/components/BulletGroup.svelte";
 
-   import { base } from "$app/paths";
+  import { base } from "$app/paths";
   import TableWithNote from "$lib/components/TableWithNote.svelte";
-    import AnimatedBackedContent from "$lib/components/AnimatedBackedContent.svelte";
+  import AnimatedBackedContent from "$lib/components/AnimatedBackedContent.svelte";
   import ExperienceHackathon from "$lib/parts/Experience-InnovationHackathon.svelte";
   import ExperienceHhtRescue from "$lib/parts/Experience-HHTRescue.svelte";
 
   import NodeDiagram from "$lib/components/Diagramming/ServicesDiagram.svelte";
+  import Hero from "$lib/components/Hero.svelte";
+  import SubdivigingTitle from "$lib/components/SubdivigingTitle.svelte";
 </script>
 
 <Header />
 
 <div class="page-wrapper">
-  <BackedContent>
-    <div class="break-title">
-      <span class="break-title-bold">Software</span>
-      <span>
-        Delivery, Support and Rescue services where
-        <span class="gradient-text"> context </span> matters.
-      </span>
-    </div>
-  </BackedContent>
+  <Hero />
 
   <div class="scene-container">
-    <div class="component">
+    <div class="baner-component">
       <BusinessContext />
     </div>
 
-    <div class="component">
+    <div class="baner-component">
       <AnimatedBackedContent>
         <div class="image-container">
-          <img src={`${base}/Arrow2-NoBack.png`} alt="Logo" class="responsive-image" />
+          <img
+            src={`${base}/Arrow2-NoBack.png`}
+            alt="Logo"
+            class="responsive-image"
+          />
         </div>
       </AnimatedBackedContent>
     </div>
-    <div class="component">
+    <div class="baner-component">
       <EngineeredSolution />
     </div>
   </div>
 
-  <BackedContent><h2 class="values-container">Core Values</h2></BackedContent>
+  <SubdivigingTitle title="Core Values" />
+
   <div id="us">
     {#snippet simplicityContent()}
       <div>
@@ -153,38 +152,56 @@
       ]}
     />
 
-    <div id="technologies" class="tech-container">
-    <TableWithNote
-      title={"We are professionals at:"}
-      headers={[
-        "Platforms & Cloud",
-        "Data",
-        "Languages",
-        "Backend Frameworks",
-        "Frontend Frameworks",
-      ]}
-      values={[
-        ["Azure", "Power Platform", "Shopify", "Umbraco Cloud", "AWS", "Sentry", "DataDog"],
-        ["MSSQL", "PowerBi", "CosmosDB", "Azure Synapse", "ADF", "SQLite", "MongoDB"],
-        ["C#", "Python", "TS/JS", "HTML/CSS", "SQL", "Powershell", "Bash"],
-        [".NET", "Django", "FastApi", "Express.js", "Umbraco"],
-        ["Blazor", "MAUI", "Svelte", "Angular", "React", "Remix", "htmx"],
-      ]}
-    >
-      <h2 class="list-title">We are:</h2>
-      <ol class="bullet-title">
-        <li>Cloud-Native</li>
-        <li>Data-Driven</li>
-        <li>Security-Minded</li>
-        <li>Goal-Oriented</li>
-      </ol>
-    </TableWithNote>
-  </div>
+    <SubdivigingTitle title="Technologies" />
 
-  <div id="services">
-    <BackedContent><h2 class="values-container">Services</h2></BackedContent>
-    <NodeDiagram></NodeDiagram>
-  </div>
+    <div id="technologies" class="tech-container">
+      <TableWithNote
+        title={"We are professionals at:"}
+        headers={[
+          "Platforms & Cloud",
+          "Data",
+          "Languages",
+          "Backend Frameworks",
+          "Frontend Frameworks",
+        ]}
+        values={[
+          [
+            "Azure",
+            "Power Platform",
+            "Shopify",
+            "Umbraco Cloud",
+            "AWS",
+            "Sentry",
+            "DataDog",
+          ],
+          [
+            "MSSQL",
+            "PowerBi",
+            "CosmosDB",
+            "Azure Synapse",
+            "ADF",
+            "SQLite",
+            "MongoDB",
+          ],
+          ["C#", "Python", "TS/JS", "HTML/CSS", "SQL", "Powershell", "Bash"],
+          [".NET", "Django", "FastApi", "Express.js", "Umbraco"],
+          ["Blazor", "MAUI", "Svelte", "Angular", "React", "Remix", "htmx"],
+        ]}
+      >
+        <h2 class="list-title">We are:</h2>
+        <ol class="bullet-title">
+          <li>Cloud-Native</li>
+          <li>Data-Driven</li>
+          <li>Security-Minded</li>
+          <li>Goal-Oriented</li>
+        </ol>
+      </TableWithNote>
+    </div>
+
+    <div id="services">
+      <SubdivigingTitle title="Services" />
+      <NodeDiagram></NodeDiagram>
+    </div>
 
     <Bio title="The Team" reversed={false} imgSrc={null}>
       <div class="content text-block">
@@ -269,25 +286,20 @@
     </div>
   </div>
   <div id="contact">
-    <BackedContent><h2 class="values-container">Contact</h2></BackedContent>
+    <SubdivigingTitle title="Contact" />
   </div>
 </div>
 <Footer />
 
 <style>
-  .page-wrapper {
-    max-width: 1248px;
-    margin: 0 auto;
-
-  }
-
   .scene-container {
     display: flex;
-    height: 500px; /* Full viewport height */
+    height: 400px;
     justify-content: center;
     align-items: center;
-    gap: 1rem; /* Add space between components */
-    padding: 1rem; /* Add some padding around the container */
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 10rem;
   }
 
   .tech-container {
@@ -305,44 +317,29 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 79%; 
+    height: 79%;
   }
 
   .list-title {
     margin-bottom: 30px;
   }
 
-  .bio-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    align-items: stretch;
-  }
-
-  .image-container{
+  .image-container {
     align-items: center;
   }
 
-  .component {
-    flex: 1; /* Each takes equal space (1/3) */
-    position: relative; /* Key: creates positioning context */
-    overflow: hidden; /* Optional */ /* Same height as container */
+  .baner-component {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
     justify-content: center;
-    min-width: 0; /* Prevent flex items from overflowing */
-  }
-
-  .values-container {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    min-width: 0;
   }
 
   .responsive-image {
     width: clamp(100px, 25vw, 400px);
-    height: auto; /* This is crucial for maintaining aspect ratio */
-    max-width: 100%; /* Maintain aspect ratio */
-
-    /* Center the image */
+    height: auto;
+    max-width: 100%;
     display: block;
   }
 
@@ -354,9 +351,9 @@
       align-items: center;
     }
 
-    .component {
+    .baner-component {
       width: 90vw;
-      flex: none; /* Disable flex-grow/shrink */
+      flex: none;
     }
   }
 
@@ -366,42 +363,8 @@
     }
   }
 
-  .break-title {
-    text-align: center;
-    font-size: 2.5rem; /* Adjust as needed */
-    margin: 10rem 0 10rem;
-  }
-
-  .break-title-bold {
-    font-weight: 900;
-  }
-
   .text-block {
     font-size: medium;
     text-align: justify;
-  }
-
-  .gradient-text {
-    background: linear-gradient(to right, #146edc, pink, springgreen);
-    background-size: 200% 200%;
-    animation: rainbow 2s ease-in-out infinite;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: rgba(0, 0, 0, 1);
-    transition: color 0.2s ease-in-out;
-  }
-  .gradient-text:hover {
-    color: rgba(0, 0, 0, 0);
-  }
-  @keyframes rainbow {
-    0% {
-      background-position: left;
-    }
-    50% {
-      background-position: right;
-    }
-    100% {
-      background-position: left;
-    }
   }
 </style>

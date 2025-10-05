@@ -23,15 +23,6 @@
     min-height: 200px;
     }
 
-    .note-container {
-    display: flex;
-    gap: 2rem;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
   .note-content {
     min-width: 33%;
   }
