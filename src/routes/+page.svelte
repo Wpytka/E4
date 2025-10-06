@@ -56,7 +56,7 @@
         </p>
         <p>Our Decisions are always driven by logic and context.</p>
         <p>
-          We keep ourselves our solutions grounded, our ways of working are
+          We keep ourselves and our solutions grounded, our ways of working are
           transparent and easy to follow.
         </p>
         <p>Ockham Razor's concept is close to our hearts.</p>
@@ -69,7 +69,7 @@
         <p>We always strive for practical approach.</p>
         <p>
           We believe that technology itself is only a tool - giving it purpose
-          and placing it in right context is key.
+          and placing it in a right context is key.
         </p>
         <p>Can't be done? We heard that before and made things work.</p>
       </div>
@@ -208,13 +208,13 @@
       <div class="content text-block">
         <p>
           We met in another organization, assembled to take on challenging work
-          that had fallen through the cracks—internal tools, complex technical
+          that had fallen through the cracks - internal tools, complex technical
           support issues, service recovery, and projects that required close
           collaboration with clients. By tackling these areas, we built strong
           working relationships that grew into lasting partnerships. After being
-          acquired by a "Big 5 Consulting" and facing drastic changes in ways of
-          working, the team decided to organize independently to stay focused on
-          quality and impact.
+          acquired by one of "Big 5 Consulting" companies and facing drastic
+          changes in ways of working, the team decided to organize independently
+          to stay focused on quality and impact.
         </p>
         <p>
           Made up entirely of senior professionals, we combine deep hands-on
@@ -222,7 +222,7 @@
           cutting-edge technologies. Our goal is simple: support real-world
           operations. Whether that means building tailored software, guiding
           digital change, offering technical support, delivering training, or
-          shaping early-stage ideas—we bring practical expertise and a
+          shaping early-stage ideas - we bring practical expertise and a
           clear-eyed approach to getting things done.
         </p>
       </div>
@@ -237,12 +237,12 @@
             both operational support and project landscapes, with a strong focus
             on aligning initiatives with broader strategic goals. I've worked
             across diverse industries including Premium Goods manufacturing,
-            Insurance, and Technology—bringing a unique approach to each
+            Insurance, and Technology - bringing a unique approach to each
             engagement.
           </p>
           <p>
             I thrive in complex environments, where I can bring structure to
-            ambiguity—leading delivery teams, managing budgets and timelines,
+            ambiguity - leading delivery teams, managing budgets and timelines,
             and ensuring services are not only delivered but continuously
             optimized. With a hands-on approach to stakeholder engagement and a
             deep focus on continuous improvement, I aim to build delivery models
@@ -250,9 +250,9 @@
           </p>
           <p>
             Outside of work, I'm a calisthenics enthusiast who thrives on
-            routine and discipline—qualities that naturally extend into my
+            routine and discipline - qualities that naturally extend into my
             professional life. I also paint miniatures in my spare time, a hobby
-            that demands an extreme attention to detail and patience—traits I
+            that demands an extreme attention to detail and patience - traits I
             bring to the table while working with my partners.
           </p>
         </div>
@@ -271,7 +271,7 @@
             Throughout my career, I have taken on multiple roles from a solution
             architect through digital transformations consultant to engineering
             manger building and leading multiple cross-functional teams. I have
-            contributed to a wide range of project types, including end-to-end
+            contributed to a wide range of project types, including end-to-end
             software delivery, building internal tooling, consultancy for
             external clients, team augmentation engagements, and support
             services.
@@ -287,10 +287,10 @@
     </div>
   </div>
 
-    <div>
-      <SubdivigingTitle title="Experiences" />
-      <ExperiencesDiagram></ExperiencesDiagram>
-    </div>
+  <div>
+    <SubdivigingTitle title="Experiences" />
+    <ExperiencesDiagram></ExperiencesDiagram>
+  </div>
 
   <div id="contact">
     <SubdivigingTitle title="Contact" />
