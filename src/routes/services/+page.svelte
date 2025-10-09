@@ -74,7 +74,7 @@ Once our solution is in place we observe and monitor it. After agreed successful
     <BulletGroup
       items={[
         {
-          title: "First we Listne",
+          title: "We Listen",
           content: listenSnippet,
         },
         {
