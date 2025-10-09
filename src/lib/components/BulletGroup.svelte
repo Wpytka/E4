@@ -6,7 +6,10 @@
     content: import("svelte").Snippet;
   }
 
-  let { items = [] }: { items: AccordionItem[] } = $props();
+  let {
+    items = [],
+    numbered = false,
+  }: { items: AccordionItem[]; numbered?: boolean } = $props();
   let activeIndex = $state<number | null>(0);
 
   function selectItem(index: number) {
@@ -16,19 +19,35 @@
 
 <div class="horizontal-accordion">
   <div class="accordion-titles">
-    <ul>
-      {#each items as item, index}
-        <li class="bullet-title">
-          <button
-            class="bullet-button"
-            class:active={activeIndex === index}
-            onclick={() => selectItem(index)}
-          >
-            {item.title}
-          </button>
-        </li>
-      {/each}
-    </ul>
+    {#if numbered}
+      <ol>
+        {#each items as item, index}
+          <li class="bullet-title">
+            <button
+              class="bullet-button"
+              class:active={activeIndex === index}
+              onclick={() => selectItem(index)}
+            >
+              {item.title}
+            </button>
+          </li>
+        {/each}
+      </ol>
+    {:else}
+      <ul>
+        {#each items as item, index}
+          <li class="bullet-title">
+            <button
+              class="bullet-button"
+              class:active={activeIndex === index}
+              onclick={() => selectItem(index)}
+            >
+              {item.title}
+            </button>
+          </li>
+        {/each}
+      </ul>
+    {/if}
   </div>
 
   {#if activeIndex !== null && items[activeIndex]}
@@ -42,7 +61,6 @@
         </div>
       </div>
     </div>
-    
   {/if}
 </div>
 

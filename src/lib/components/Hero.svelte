@@ -13,13 +13,5 @@
 </BackedContent>
 
 <style>
-    .break-title {
-        text-align: center;
-        font-size: 2.5rem;
-        margin: 10rem 0 0rem;
-    }
 
-    .break-title-bold {
-        font-weight: 900;
-    }
 </style>

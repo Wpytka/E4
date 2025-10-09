@@ -20,6 +20,28 @@
       margin: 0 auto;
   }
 
+  .text-block {
+      font-size: medium;
+      text-align: justify;
+  }
+
+  .break-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 6rem 0 0rem;
+  }
+
+  .break-title-bold {
+      font-weight: 900;
+  }
+  
+    .subtitle {
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: larger;
+    text-align: center;
+  }
+
   .gradient-text {
       background: linear-gradient(to right, #146edc, pink, springgreen);
       background-size: 200% 200%;

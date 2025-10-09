@@ -12,7 +12,7 @@
         { id: "21", type: 'custom', position: { x: 400, y: 300 }, data: { service: "Workshops", nav:"/services" },connectable:false, deletable:false },
         { id: "22", type: 'custom', position: { x: 600, y: 300 }, data: { service: "Trainings", nav:"/services" },connectable:false, deletable:false },
 
-        { id: "23", type: 'custom', position: { x: 50, y: 450 }, data: { service: "Software Rescue Service", nav:"/services" },connectable:false, deletable:false },
+        { id: "23", type: 'custom', position: { x: 50, y: 450 }, data: { service: "Software Rescue Service", nav:"/services#rescue" },connectable:false, deletable:false },
 
         { id: "31", type: 'custom', position: { x: 1100, y: 250 }, data: { service: "PoC", nav:"/services" },connectable:false, deletable:false },
         { id: "32", type: 'custom', position: { x: 900, y: 350 }, data: { service: "R&D", nav:"/services" },connectable:false, deletable:false },

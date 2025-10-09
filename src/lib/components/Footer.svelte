@@ -17,6 +17,7 @@
   .footer-text {
     color: white;
     text-align: right;
+    margin-top: 20px;
     margin-right: 10px;
     vertical-align: center;
     position: relative;

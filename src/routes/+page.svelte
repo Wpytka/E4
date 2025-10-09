@@ -369,9 +369,4 @@
       width: 45vw;
     }
   }
-
-  .text-block {
-    font-size: medium;
-    text-align: justify;
-  }
 </style>
