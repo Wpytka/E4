@@ -2,7 +2,7 @@
     import { Background, BackgroundVariant, SvelteFlow } from "@xyflow/svelte";
 
     import "@xyflow/svelte/dist/style.css";
-    import CustomNodeType from "./CustomNodeType.svelte";
+    import HighlightNodeType from "./Nodes/HighlightNodeType.svelte";
 
     let nodes = $state.raw([
         { id: "1", type: 'custom', position: { x: 470, y: 20 }, data: { service: "Delivery Managment", nav:"/services#delivery-management" }, connectable:false, deletable:false},
@@ -37,7 +37,7 @@
     ]);
 
       const nodeTypes = {
-    custom: CustomNodeType,
+    custom: HighlightNodeType,
   };
 </script>
 

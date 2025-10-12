@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Handle, Position, type NodeProps } from "@xyflow/svelte";
-    import AnimatedBackedContent from "../AnimatedBackedContent.svelte";
+    import AnimatedBackedContent from "../../AnimatedBackedContent.svelte";
 
     let { data }: NodeProps = $props();
 </script>

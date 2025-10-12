@@ -2,16 +2,20 @@
     import { Handle, Position, type NodeProps } from "@xyflow/svelte";
 
     let { data }: NodeProps = $props();
+
+    function handleMouseOver(){
+        console.log("over")
+    }
 </script>
 
-<a href="{data.nav as string}" class="no-color-link">
-    <div class="node-gradient-1">
-        <div class="node-text">{data.service}</div>
+
+    <div class="node-gradient-1" onmouseover={handleMouseOver}>
+        <div class="node-text">{data.title}</div>
+        <div>{data.description}</div>
     </div>
 
     <Handle type="target" position={Position.Top} class="handle" />
     <Handle type="source" position={Position.Bottom} class="handle" />
-</a>
 
 <style>
     .node-gradient-1 {
