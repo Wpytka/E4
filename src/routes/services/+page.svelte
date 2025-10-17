@@ -4,71 +4,88 @@
   import Header from "$lib/components/Header.svelte";
   import ServicesNodeDiagram from "$lib/components/Diagramming/ServicesDiagram.svelte";
   import SubdivigingTitle from "$lib/components/SubdivigingTitle.svelte";
-    import BulletGroup from "$lib/components/BulletGroup.svelte";
-    import PartRescueDescription from "$lib/parts/PartRescueDescription.svelte";
+  import BulletGroup from "$lib/components/BulletGroup.svelte";
+  import PartRescueDescription from "$lib/parts/PartRescueDescription.svelte";
+  import PartRescueApproach from "$lib/parts/PartRescueApproach.svelte";
 </script>
 
 <Header />
 <div class="page-wrapper">
-
   <BackedContent>
     <div class="break-title">
-        <span class="break-title-bold">Services</span>
+      <span class="break-title-bold">Services</span>
     </div>
   </BackedContent>
 
   <h3 class="subtitle">
     We provide comprehensive software delivery, support and rescue services. Our
-    approch is holistic from business understanding to software system
-    solutions reliability and longevity.
+    approach is holistic from business understanding to software system solutions
+    reliability and longevity.
   </h3>
 
   <ServicesNodeDiagram></ServicesNodeDiagram>
 
-
-
   <div id="rescue">
     <SubdivigingTitle title="Software Rescue" />
 
-    <PartRescueDescription/>
+    <PartRescueDescription />
 
     <SubdivigingTitle title="Approach" />
 
     {#snippet listenSnippet()}
       <div>
         <p>
-        We understand that context matters. We will listen to you and hear your story about challenges you are facing</p>
+          We understand that context matters. We will listen to you and hear
+          your story about challenges you are facing
+        </p>
       </div>
     {/snippet}
 
     {#snippet auditSnippet()}
       <div>
-        <p>Our Engineering Team and Architects will conduct a through analysis of your code, architecture and environment​</p>
+        <p>
+          Our Engineering Team and Architects will conduct a through analysis of
+          your code, architecture and environment​
+        </p>
       </div>
     {/snippet}
 
     {#snippet analysisSnippet()}
       <div>
-        <p>Based on our technical review, provided context we will prepare a detailed analysis of your problem with our proposed solutions and implementation plan to get you and your product to a safe heaven​</p>
+        <p>
+          Based on our technical review, provided context we will prepare a
+          detailed analysis of your problem with our proposed solutions and
+          implementation plan to get you and your product to a safe heaven​
+        </p>
       </div>
     {/snippet}
 
     {#snippet implementationSnippet()}
       <div>
-        <p>Our Appointed Delivery Manager and Engineering team will work with you, provide regular updates throughout the implementation of the rescue service</p>
+        <p>
+          Our Appointed Delivery Manager and Engineering team will work with
+          you, provide regular updates throughout the implementation of the
+          rescue service
+        </p>
       </div>
     {/snippet}
 
     {#snippet stabilizationSnippet()}
       <div>
         <p>
-Once our solution is in place we observe and monitor it. After agreed successful stabilization and acceptance criteria met - mission accomplished</p>
+          Once our solution is in place we observe and monitor it. After agreed
+          successful stabilization and acceptance criteria met - mission
+          accomplished
+        </p>
       </div>
     {/snippet}
 
     {#snippet supportSnippet()}
       <div>
-        <p>After successful stabilization period we transition Rescue Service into regular support and maintenance of the solution.</p>
+        <p>
+          After successful stabilization period we transition Rescue Service
+          into regular support and maintenance of the solution.
+        </p>
       </div>
     {/snippet}
     <BulletGroup
@@ -97,16 +114,29 @@ Once our solution is in place we observe and monitor it. After agreed successful
           title: "Regular Support and Maintenance",
           content: supportSnippet,
         },
-      ]} 
+      ]}
       numbered={true}
     />
 
-  <div id="delivery"></div>
-  <div id="support"></div>
-  <div id="rescue"></div>
+    <br />
+    <div class="text-block">
+      <p>
+        Our 3-phased software rescue approach ensures that process is fulfilled.
+        During each stage we will collect your feedback to see if any
+        adjustments are required. Throughout each phase we will provide
+        periodic reports on the progress of the rescue operation. After
+        Implementation and Stabilization phase we will transition you to our
+        Support Services Model.
+      </p>
+    </div>
+    <PartRescueApproach />
   </div>
 </div>
 <Footer />
 
 <style>
+  .text-block {
+    text-align: justify;
+  }
+
 </style>

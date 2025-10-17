@@ -6,7 +6,7 @@
 <div class="experience-columns-container">
   <div class="experience-column">
     <StaticBulletContainer title={"When"}>
-       <div class="gradient-text highlight">Have you asked thoese questions:</div>
+       <div class="gradient-text highlight">Have you asked these questions:</div>
       <div class="small-text-block">
         <p>Unhappy customers?​</p>
         <p>Clients leaving?</p>
@@ -25,7 +25,7 @@
       <div class="small-text-block">
         <p>
           Our Team has a vast experience in rescuing services, products from
-          costly stalemates and seemingly unescable pitfalls.​
+          costly stalemates and seemingly unescapable pitfalls.​
         </p>
         <p>
           Our tailored approach ensures that your specific concerns are fully

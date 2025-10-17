@@ -1,7 +1,7 @@
 <script lang="ts">
   import Devider from "./Devider.svelte";
 
-  let { title, children } = $props();
+  let { title, children }:{title:string, children:any} = $props();
 </script>
 
 <div class="container">

@@ -17,8 +17,8 @@
   </BackedContent>
 
     <h3 class="subtitle">
-    We are working across multiple industires with enterprise level software for over 12 years.
-    Our clients experiences are the foundation of our appporach.
+    We are working across multiple industries with enterprise level software for over 12 years.
+    Our clients experiences are the foundation of our approach.
   </h3>
 
   <ExperiencesDiagram></ExperiencesDiagram>
